@@ -1,38 +1,57 @@
-.App {
+.loading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2caeba
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jobs-center {
+  width: 80vw;
+  margin: 0 auto;
+  /* max-width: var(--max-width); */
+}
+.btn-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.job-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  margin: 0 0.5rem;
+  transition:  all 0.3s linear;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color:  hsl(186, 100%, 94%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job-btn:hover {
+  color: #2caeba;
+  box-shadow: 0 2px #2caeba;
+}
+.active-btn {
+  color: #2caeba;
+  box-shadow: 0 2px #2caeba;
 }
